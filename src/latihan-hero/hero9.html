@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Hero 9</title>
+    <link rel="stylesheet" href="/dist/output.css">
+</head>
+<body class="font-roboto max-w-screen">
+
+    <header class="absolute h-16 w-full flex gap-4 p-2 items-center">
+        <div class="bg-slate-400 h-12 w-12 flex items-end rounded-full overflow-hidden">
+            <img src="/src/svg/woman3.svg" class="w-10 h-10 mx-auto">
+        </div>
+        <nav class="font-bold flex gap-4">
+            <a class="py-2 px-2 hover:bg-indigo-500 hover:text-white rounded" href="#">Blush</a>
+            <a class="py-2 px-2 hover:bg-indigo-500 hover:text-white rounded" href="#">Collection</a>    
+            <a class="py-2 px-2 hover:bg-indigo-500 hover:text-white rounded" href="#">Artists</a>
+        </nav>
+        <div class="bg-white grow flex gap-2 border border-slate-800 items-center rounded p-1.5 ">
+            <img src="/src/svg/search.svg" class="w-5 h-5">
+            <input type="text" class="grow outline-none" placeholder="Search">
+        </div>
+        <div class="max-md:hidden">
+            <button class="bg-indigo-500 py-2 px-4 text-white rounded hover:scale-110 duration-500 ease-out">Download</button>
+            <button class="bg-white border-2 border-slate-900 py-2 px-4 rounded hover:scale-110 duration-500 ease-out">Sign in</button>
+        </div>
+        <img src="/src/svg/three.svg" class="w-8 h-8">
+    </header>
+
+    <main class="min-h-screen min-w-screen pt-16 flex flex-col-reverse md:grid md:grid-cols-2 relative">
+        <div class="absolute -z-10 bg-sky-500 w-[65vw] h-full skew-x-[30deg] -ml-72">
+        </div>
+        <div class="flex items-center md:relative">
+            <img class="max-md:grow max-md:px-5 md:absolute min-w-[60vw] md:-right-5" src="/src/svg/image-hero9.svg" alt="">
+        </div>
+        <div class="my-10 flex items-center px-5 pt-5 pb-10">
+            <div class="grow max-md:text-center">
+                <p class="font-playfair font-bold text-5xl leading-tight">Crafting Your <br> Doodles Story</p>
+                <p class="my-4 text-lg">Beautiful Doodles to Tell Your Story</p>
+                <div class="flex gap-4 justify-center">
+                    <button class="hover:scale-110 duration-500 ease-out bg-indigo-500 h-12 px-4 font-medium text-white rounded">Download</button>
+                    <button class="hover:scale-110 duration-500 ease-out bg-white h-12 px-4 font-medium rounded border border-black">Sign In</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const img = document.getElementById('');
+        setTimeout(() => {
+            img.classList.remove('scale-0')
+        }, 1000);
+    });
+
+</script>
+</html>
