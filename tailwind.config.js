@@ -15,7 +15,7 @@ module.exports = {
       'nunito': ['Nunito Sans'],
       'roboto': ['Roboto'],
       'playfair': ['Playfair Display'],
-      'smooch': ['Smooch']
+      'smooch': ['Smooch','cursive']
     },
   },
   plugins: [],
