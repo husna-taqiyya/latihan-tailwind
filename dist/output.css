@@ -775,6 +775,14 @@ video {
   height: 1080px;
 }
 
+.h-\[270px\]{
+  height: 270px;
+}
+
+.h-\[800px\]{
+  height: 800px;
+}
+
 .h-full{
   height: 100%;
 }
@@ -786,26 +794,6 @@ video {
 
 .h-screen{
   height: 100vh;
-}
-
-.h-\[600px\]{
-  height: 600px;
-}
-
-.h-\[200px\]{
-  height: 200px;
-}
-
-.h-\[800px\]{
-  height: 800px;
-}
-
-.h-\[270px\]{
-  height: 270px;
-}
-
-.h-\[220px\]{
-  height: 220px;
 }
 
 .min-h-screen{
@@ -862,54 +850,6 @@ video {
 
 .w-full{
   width: 100%;
-}
-
-.w-\[1910\]{
-  width: 1910;
-}
-
-.w-\[1910px\]{
-  width: 1910px;
-}
-
-.w-\[1920px\]{
-  width: 1920px;
-}
-
-.w-\[190px\]{
-  width: 190px;
-}
-
-.w-\[990px\]{
-  width: 990px;
-}
-
-.w-\[100px\]{
-  width: 100px;
-}
-
-.w-\[1000px\]{
-  width: 1000px;
-}
-
-.w-\[1200px\]{
-  width: 1200px;
-}
-
-.w-\[1100px\]{
-  width: 1100px;
-}
-
-.w-\[1120px\]{
-  width: 1120px;
-}
-
-.w-\[1110px\]{
-  width: 1110px;
-}
-
-.w-\[1112px\]{
-  width: 1112px;
 }
 
 .min-w-\[60vw\]{
@@ -1503,6 +1443,10 @@ video {
 
 .ease-in{
   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+}
+
+.ease-out{
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
 
 .hover\:z-10:hover{
