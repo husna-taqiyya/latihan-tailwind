@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="/dist/output.css">
+</head>
+<body class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
+    <main>
+        <!-- text -->
+        <div class="font-smooch text-center text-white pt-6">
+            <h1 class="text-5xl tracking-wide">Latihan Tailwind</h1>
+            <h2 class="text-lg ">By : Husna Taqiyyatussalamah</h2>
+        </div>
+        <!-- cards -->
+        <div class="p-10 font-smooch">
+            <div id="grid" class="grid grid-cols-2 sm:grid-cols-4 gap-4 ml-2">
+            </div>
+        </div>
+    </main>
+    <script>
+        const links = [
+        "hero1.html", 
+        "hero2.html", 
+        "hero3.html", 
+        "hero4.html", 
+        "hero5.html",
+        "hero6.html",
+        "hero7.html",
+        "hero8.html",
+        "hero9.html",
+        "hero10.html",
+        "hero11.html",
+        "hero12.html"
+    ];
+
+    const grid = document.getElementById("grid");
+    for (let i = 0; i < links.length; i++) {
+        const link = links[i];
+        const title = `hero ${i+1}`
+        const html_iframe =
+        `<div class="bg-blue-200 rounded shadow-xl relative transform hover:scale-110 hover:bg-opacity-75 transition ease-uot">
+            <div class="bg-white aspect-video overflow-hidden rounded shadow-xl relative">
+                <iframe src="${link}" frameborder="0" class="w-[1920px] h-[1080px] origin-[0%_0%] scale-[0.2] duration-300 ease-in"></iframe>
+            </div>
+            <div>
+                <a href="${link}" class="pl-20 text-3xl">${title}</a>
+            </div>
+        </div>`
+
+        grid.innerHTML +=html_iframe
+        
+    };
+
+    const div = grid.querySelector('div');
+    
+
+    window.addEventListener('resize', ()=> {
+        console.log("resize");
+        calculate_scale()
+    });
+
+    const calculate_scale = function(){
+        const width = div.clientWidth;
+
+        const scale =  Math.ceil((width/1920)*100)/100;
+
+        const scale1 = width/1920;
+        const scale2 = scale1*100;
+        const scale3 = Math.ceil(scale2);
+        const scale4 = scale3/100;
+        
+        const scalefinal = Math.ceil((width/1920)*100)/100;
+        console.log(scalefinal);
+
+        const iframes = document.getElementsByTagName('iframe');
+
+        for (let i = 0; i < iframes.length; i++) {
+            const iframe = iframes[i];
+
+            iframe.style.setProperty(
+                'transform', `scale(${scalefinal})`
+            )
+        }
+    }
+    calculate_scale();
+
+
+
+    
+
+    </script>
+</body>
+</html>

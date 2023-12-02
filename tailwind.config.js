@@ -14,7 +14,8 @@ module.exports = {
     fontFamily: {
       'nunito': ['Nunito Sans'],
       'roboto': ['Roboto'],
-      'playfair': ['Playfair Display']
+      'playfair': ['Playfair Display'],
+      'smooch':['Smooch']
     },
   },
   plugins: [],
