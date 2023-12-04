@@ -7,12 +7,20 @@
     <link rel="stylesheet" href="/dist/output.css">
 </head>
 <body>
+<!--     FIXME pakai h-screen saja supaya tidak perlu scroll kebawah -->
+<!--     FIXME coba grid hanya aktif di md, dan buang flex -->
     <main class="min-h-screen flex grid grid-cols-2 mx-auto items-center">
+<!--         FIXME buat image selalu di tengah -->
+<!--         caranya tambah h-full flex justify-center items-end md:items-center, jadi saat mobile view, gambar turun kebawah  -->
         <div class="bg-rose-100 p-4">
+<!--             TODO div yg dibawah ini dibuang saja -->
             <div class="flex justify-center">
                 <img src="/src/svg/Woman Power Business.svg">
             </div>
         </div>
+<!--         FIXME jadikan text diatas gambar saat mobile view -->
+<!--         caranya tambahkan max-md:absolute w-full -->
+<!--         kasih top juga supaya tidak mentok ke atas -->
         <div class="text-center">
             <div>
                 <div class="max-md:text-4xl text-6xl font-bold font-playfair pb-4">Beautiful <br> Doodles to Tell <br> Your Story</div>

@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="/dist/output.css">
 </head>
 <body class="font-roboto max-w-screen">
-
+<!-- FIXME perbaiki header mobile view -->
     <header class="absolute h-16 w-full flex gap-4 p-2 items-center">
         <div class="bg-slate-400 h-12 w-12 flex items-end rounded-full overflow-hidden">
             <img src="/src/svg/woman3.svg" class="w-10 h-10 mx-auto">
@@ -19,10 +19,13 @@
         </nav>
         <div class="bg-white grow flex gap-2 border border-slate-800 items-center rounded p-1.5 ">
             <img src="/src/svg/search.svg" class="w-5 h-5">
+<!--             FIXME kasih w-full supaya tidak overflow -->
             <input type="text" class="grow outline-none" placeholder="Search">
         </div>
+<!--         FIXME kasih flex agar button selalu sejajar -->
         <div class="max-md:hidden">
             <button class="bg-indigo-500 py-2 px-4 text-white rounded hover:scale-110 duration-500 ease-out">Download</button>
+<!--             FIXME kasilh class min-w-fit supaya Sign In tidak menjadi 2 baris -->
             <button class="bg-white border-2 border-slate-900 py-2 px-4 rounded hover:scale-110 duration-500 ease-out">Sign in</button>
         </div>
         <img src="/src/svg/three.svg" class="w-8 h-8">
