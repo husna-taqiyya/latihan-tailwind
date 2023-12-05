@@ -12,37 +12,30 @@
             <div class="bg-gray-300 h-12 w-12 rounded-full flex items-end overflow-hidden max-md:ml-4">
                 <img src="/src/svg/girl-svgrepo-com.svg" class="w-10 h-10 mx-auto">
             </div>
-<!--             FIXMe kasih max-md:justify-between -->
-            <nav class="font-bold flex gap-4 max-md:grow">
+            <nav class="font-bold flex gap-4 max-md:grow max-md:justify-between">
                 <a class="py-2 px-2 hover:bg-indigo-500 hover:text-white rounded" href="">Blush</a>
                 <a class="py-2 px-2 hover:bg-indigo-500 hover:text-white rounded" href="">Collection</a>
                 <a class="py-2 px-2 hover:bg-indigo-500 hover:text-white rounded" href="">Artists</a>
             </nav>
             <div class="md:grow flex gap-2 md:border md:border-slate-900 items-center rounded p-1.5">
                 <img src="/src/svg/search.svg" class="max-md:w-7 max-md:h-7 w-5 h-5">
-<!--                 FIXME kasih w-full supaya tidak overflow -->
-                <input type="text" class="grow outline-none max-md:hidden" placeholder="Search">
+                <input type="text" class="w-full grow outline-none max-md:hidden" placeholder="Search">
             </div>
         </div>
         <div class="flex gap-4 items-center max-md:justify-center max-md:pt-4">
             <button class="bg-indigo-500 py-2 px-4 text-white rounded hover:scale-110 duration-500 ease-out">Download</button>
-<!--             FIXME kasilh class min-w-fit supaya Sign In tidak menjadi 2 baris -->
-            <button class="bg-white border border-slate-900 py-2 px-4 rounded hover:scale-110 duration-500 ease-out">Sign in</button>
+            <button class="bg-white border border-slate-900 py-2 px-4 rounded hover:scale-110 duration-500 ease-out min-w-fit">Sign in</button>
             <img src="/src/svg/three.svg" class="w-8 h-8 max-md:hidden">
         </div>
     </header>
 
-
-    <main class="min-h-screen max-md:pt-36 pt-24 flex flex-col md:grid md:grid-cols-2 max-w-5xl mx-auto items-center max-md:mx-5"> 
-        <div class="max-md:grow h-full w-full relative grow max-md:ml-10">
-<!--             FIXME image menghalangi text, cek view iPhone-SE -->
-<!--             supaya parent memiliki height yg solid, image pertama di buang absolutenya saat mobile view, jadi set md:absolute -->
-<!--             image kedua dan ketiga tetap absolute supaya bisa di set left value -->
-            <img src="/src/svg/handphone1.svg" class="max-md:top-0 max-md:left-2 max-md:w-44 max-md:rotate-[0deg] absolute w-72 rotate-[20deg] top-32 -left-56 ">
+    <main class="h-screen max-md:pt-36 pt-24 flex flex-col md:grid md:grid-cols-2 max-w-5xl mx-auto items-center max-md:mx-5"> 
+        <div class="h-full w-full relative grow max-md:pb-10">
+            <img src="/src/svg/handphone1.svg" class="max-md:top-0 max-md:left-2 max-md:w-44 max-md:rotate-[0deg] md:absolute w-72 rotate-[20deg] top-32 -left-56 ">
             <img src="/src/svg/handphone2.svg" class="max-md:top-0 max-md:left-24 max-md:w-44 max-md:rotate-[0deg] absolute w-72 rotate-[20deg] top-20 -left-10">
             <img src="/src/svg/handphone3.svg" class="max-md:top-0 max-md:left-40 max-md:w-44 max-md:rotate-[0deg] absolute w-72 rotate-[20deg] left-36">
         </div>
-        <div class="max-md:pb-24">
+        <div class="max-md:pb-20">
             <div class="max-md:text-3xl text-5xl pb-2 font-playfair font-bold tracking-wide leading-tight">Crafting Your Doodles Story</div>
             <div class="flex">
                 <div class="">

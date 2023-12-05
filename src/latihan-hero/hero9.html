@@ -7,28 +7,26 @@
     <link rel="stylesheet" href="/dist/output.css">
 </head>
 <body class="font-roboto max-w-screen">
-<!-- FIXME perbaiki header mobile view -->
-    <header class="absolute h-16 w-full flex gap-4 p-2 items-center">
-        <div class="bg-slate-400 h-12 w-12 flex items-end rounded-full overflow-hidden">
-            <img src="/src/svg/woman3.svg" class="w-10 h-10 mx-auto">
+    <header class="absolute max-md:h-28 h-16 w-full md:flex md:gap-4 p-2 md:items-center">
+        <div class="flex gap-4 grow items-center">
+            <div class="bg-gray-300 h-12 w-12 rounded-full flex items-end overflow-hidden max-md:ml-4">
+                <img src="/src/svg/girl-svgrepo-com.svg" class="w-10 h-10 mx-auto">
+            </div>
+            <nav class="font-bold flex gap-4 max-md:grow max-md:justify-between">
+                <a class="py-2 px-2 hover:bg-indigo-500 hover:text-white rounded" href="">Blush</a>
+                <a class="py-2 px-2 hover:bg-indigo-500 hover:text-white rounded" href="">Collection</a>
+                <a class="py-2 px-2 hover:bg-indigo-500 hover:text-white rounded" href="">Artists</a>
+            </nav>
+            <div class="md:grow flex gap-2 md:border md:border-slate-900 items-center rounded p-1.5">
+                <img src="/src/svg/search.svg" class="max-md:w-7 max-md:h-7 w-5 h-5">
+                <input type="text" class="w-full grow outline-none max-md:hidden" placeholder="Search">
+            </div>
         </div>
-        <nav class="font-bold flex gap-4">
-            <a class="py-2 px-2 hover:bg-indigo-500 hover:text-white rounded" href="#">Blush</a>
-            <a class="py-2 px-2 hover:bg-indigo-500 hover:text-white rounded" href="#">Collection</a>    
-            <a class="py-2 px-2 hover:bg-indigo-500 hover:text-white rounded" href="#">Artists</a>
-        </nav>
-        <div class="bg-white grow flex gap-2 border border-slate-800 items-center rounded p-1.5 ">
-            <img src="/src/svg/search.svg" class="w-5 h-5">
-<!--             FIXME kasih w-full supaya tidak overflow -->
-            <input type="text" class="grow outline-none" placeholder="Search">
-        </div>
-<!--         FIXME kasih flex agar button selalu sejajar -->
-        <div class="max-md:hidden">
+        <div class="flex gap-4 items-center max-md:justify-center max-md:pt-4">
             <button class="bg-indigo-500 py-2 px-4 text-white rounded hover:scale-110 duration-500 ease-out">Download</button>
-<!--             FIXME kasilh class min-w-fit supaya Sign In tidak menjadi 2 baris -->
-            <button class="bg-white border-2 border-slate-900 py-2 px-4 rounded hover:scale-110 duration-500 ease-out">Sign in</button>
+            <button class="bg-white border border-slate-900 py-2 px-4 rounded hover:scale-110 duration-500 ease-out min-w-fit">Sign in</button>
+            <img src="/src/svg/three.svg" class="w-8 h-8 max-md:hidden">
         </div>
-        <img src="/src/svg/three.svg" class="w-8 h-8">
     </header>
 
     <main class="min-h-screen min-w-screen pt-16 flex flex-col-reverse md:grid md:grid-cols-2 relative">

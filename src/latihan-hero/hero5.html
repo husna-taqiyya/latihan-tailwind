@@ -12,8 +12,7 @@
             <div class="bg-gray-300 h-12 w-12 rounded-full flex items-end overflow-hidden max-md:ml-4">
                 <img src="/src/svg/girl-svgrepo-com.svg" class="w-10 h-10 mx-auto">
             </div>
-<!--             TODO tambahkan max-md:justify-between supaya tampilan lebih baik di screen width 600px -->
-            <nav class="font-bold flex gap-4 max-md:grow"> 
+            <nav class="font-bold flex gap-4 max-md:grow max-md:justify-between"> 
                 <a class="py-2 px-2 hover:bg-indigo-500 hover:text-white rounded" href="">Blush</a>
                 <a class="py-2 px-2 hover:bg-indigo-500 hover:text-white rounded" href="">Collection</a>
                 <a class="py-2 px-2 hover:bg-indigo-500 hover:text-white rounded" href="">Artists</a>
@@ -23,23 +22,22 @@
                 <input type="text" class="grow outline-none max-md:hidden" placeholder="Search">
             </div>
         </div>
-        <div class="flex gap-4 items-center max-md:pt-4">
+        <div class="flex gap-4 items-center max-md:pt-4 max-md:justify-between">
             <button class="bg-indigo-500 py-2 px-4 text-white rounded hover:scale-110 duration-500 ease-out">Download</button>
             <button class="border border-slate-900 py-2 px-4 rounded hover:scale-110 duration-500 ease-out">Sign in</button>
             <img src="/src/svg/three.svg" class="w-8 h-8 max-md:hidden">
         </div>
     </header>
 
-<!--     FIXME perbaiki mobile view -->
-    <main class="min-h-screen pt-24 grid grid-cols-2 gap-6 p-4 max-w-5xl mx-auto items-center">
-        <div class="h-full w-full relative">
-            <img src="/src/svg/hp-1.svg" class="h-full md:w-60 max-md:w-44 absolute">
-            <img src="/src/svg/hp-2.svg" class="h-full md:left-40 md:w-60 left-60 max-md:w-44 absolute max-md:left-32">
+    <main class="h-screen pt-24 md:grid md:grid-cols-2 max-md:flex max-md:flex-col-reverse gap-4 p-4 max-w-5xl mx-auto items-center">
+        <div class="h-full w-full relative max-md:mt-10 max-md:ml-16">
+            <img src="/src/svg/hp-2.svg" class="md:w-60 max-md:w-44 absolute max-md:ml-32">
+            <img src="/src/svg/hp-1.svg" class="md:left-40 md:w-60 left-60 max-md:w-44 md:absolute">
         </div>
-        <div class="ml-28">
-            <div class="pb-2 text-5xl font-playfair font-bold tracking-wide max-md:text-2xl max-md:-ml-20">Crafting Your Doodles Story</div>
-            <div class="pt-3 text-xl max-md:-ml-20">Beautiful Doddle to Tell Your Story</div>
-            <div class="pt-5 max-md:-ml-20">
+        <div class="md:ml-28 -mt-20 max-md:mt-10 max-md:ml-10 max-md:text-center">
+            <div class="pb-2 text-5xl font-playfair font-bold tracking-wide max-md:text-3xl max-md:-ml-10">Crafting Your Doodles Story</div>
+            <div class="pt-3 text-xl max-md:-ml-10">Beautiful Doddle to Tell Your Story</div>
+            <div class="pt-5 max-md:-ml-10">
                 <button class="bg-indigo-500 py-2 px-4 rounded mr-3 text-white hover:scale-110 duration-500 ease-out">Download</button>
                 <button class="bg-white border border-slate-900 py-2 px-4 rounded hover:scale-110 duration-500 ease-out">Sign in</button>
             </div>
