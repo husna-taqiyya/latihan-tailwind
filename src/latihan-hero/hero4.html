@@ -19,8 +19,7 @@
             </nav>
             <div class="md:grow flex gap-2 md:border md:border-slate-900 items-center rounded p-1.5">
                 <img src="/src/svg/search.svg" class="max-md:w-7 max-md:h-7 w-5 h-5">
-<!--                 FIXME input tambahkan w-full supaya tidak overflow ketika screen medium. cek di semua page, tambahkan w-full -->
-                <input type="text" class="grow outline-none max-md:hidden" placeholder="Search">
+                <input type="text" class="grow outline-none max-md:hidden w-full" placeholder="Search">
             </div>
         </div>
         <div class="flex gap-4 items-center max-md:justify-between max-md:pt-4">
@@ -31,17 +30,11 @@
     </header>
 
     <main class="flex min-h-screen items-center pt-16 max-w-5xl mx-auto gap-6">
-<!--    FIXME buang max-md:ml-10, lebih baik pakai max-md:px-4      -->
-        <div class="md:pl-20 flex gap-4 max-md:flex max-md:flex-col max-md:ml-10">
+        <div class="md:pl-20 flex gap-4 max-md:flex max-md:flex-col max-md:px-4">
             <div class="mt-10">
-<!--                 FIXME padding-left-right tidak ada di tailwind, yang benar px-0 px-10 -->
-<!--                 FIXME atau ga usah pakai padding lagi, karna sudah text-center -->
-                <div class="lg:padding-left-right-0 md:padding-left-right-10 max-md:text-3xl max-md:padding-left-right-40 text-5xl font-playfair font-bold tracking-wide pb-4 text-center">Crafting Your <br> Doodles Story</div>
-<!--                 FIXME lebih baik pakai grid, jadi buang class flex -->
-<!--                 FIXME grid grid-cols2 gap-4, pakai class ini aja untuk membuat 2 kolom, sesuai jumlah anak -->
-                <div class="flex gap-4">
-<!--                     FIXME buang width dan height karena sudah pakai grid -->
-                    <div class="bg-gray-200 w-5/12 h-5/12 rounded-lg p-3 flex flex-col justify-between hover:scale-110 hover:z-10 duration-500 ease-out">
+                <div class="max-md:text-3xl max-md:padding-left-right-40 text-5xl font-playfair font-bold tracking-wide pb-4 text-center">Crafting Your <br> Doodles Story</div>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="bg-gray-200 rounded-lg p-3 flex flex-col justify-between hover:scale-110 hover:z-10 duration-500 ease-out">
                         <div class="grow">
                             <h4 class="text-gray-400 pb-2">Cameron Williamson</h4>
                             <h2 class="font-roboto md:text-xl max-md:text-base">
@@ -63,8 +56,7 @@
                             </div>
                         </div>
                     </div>
-<!--                     FIXME buang width dan height karena sudah pakai grid -->
-                    <div class="bg-gray-200 w-5/12 h-5/12 rounded-lg p-3 flex flex-col justify-between hover:scale-110 hover:z-10 duration-500 ease-out">
+                    <div class="bg-gray-200 rounded-lg p-3 flex flex-col justify-between hover:scale-110 hover:z-10 duration-500 ease-out">
                         <div class="grow">
                             <h4 class="text-gray-400 pb-2">Cameron Williamson</h4>
                             <h2 class="font-roboto md:text-xl max-md:text-base">
@@ -89,8 +81,7 @@
                 </div>
             </div>
             <div class="h-full w-full flex items-center overflow-hidden">
-<!--                 FIXME max-md:ml-14 dibuang saja, karena dr parent sebelumnya sudah ada padding -->
-                <img src="../svg/Top.svg" class="lg:h-full md:h-56 md:mt-32 max-md:h-64 max-md:ml-14 max-md:mt-10">
+                <img src="../svg/Top.svg" class="lg:h-full md:h-56 md:mt-32 max-md:h-64 max-md:mt-10">
             </div>
         </div>
     </main>
